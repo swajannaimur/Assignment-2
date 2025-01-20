@@ -1,6 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-.quicksand{
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* shared styles */
+
+
+/**** header section starts ****/
+.header-section {
+    background-color: #f7f7f7;
+}
+
+.header-section-content {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 11px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.menu ul {
+    display: flex;
+    gap: 32px;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.nav-button {
+    color: white;
+    background-color: #FEA301;
+    border: 2px solid #FEA301;
+    border-radius: 12px;
+    padding: 10px 60px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-icon>.fa-bars {
+    font-size: 2rem;
+}
+
+.nav-icon {
+    display: none;
+}
+
+/* banner section starts */
+.banner {
+    display: flex;
+    gap: 50px;
+}
+
+.banner-content {
+    margin: 122px 0px;
+}
+
+.banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.title-first-part {
+    color: #FEA301;
+}
+
+.title-second-part {
+    color: #01ACFD;
+}
+
+.banner-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+    margin: 24px 0px;
+}
+
+.banner-button {
+    color: white;
+    padding: 10px 48px;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 576px) {
+
+    .logo-title,
+    .menu,
+    .nav-button {
+        display: none;
+    }
+
+    .nav-icon,
+    .logo-image {
+        display: block;
+        padding: 12px 16px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
 }
