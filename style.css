@@ -10,16 +10,26 @@
 }
 
 /* shared styles */
-
-
+.width{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.background{
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+}
+.section-title{
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
 /**** header section starts ****/
 .header-section {
     background-color: #f7f7f7;
 }
 
 .header-section-content {
-    max-width: 1160px;
-    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -139,8 +149,76 @@
     transition: 0.3s;
 }
 
-
-
+/* Curriculum Section starts */
+.cards{
+    margin: 80px 0px;
+    display: flex;
+    gap: 30px;
+}
+.card{
+    padding: 50px;
+    text-align: center;
+}
+.card-1-background{
+    background: linear-gradient(180deg, #DEF5FF 0%, #FFFFFF 40%);
+    border: 1px solid #DEF5FF;
+    border-radius: 19px;  
+}
+.card-2-background{
+    background: linear-gradient(180deg, #FFF4DC 0%, #FFFFFF 40%);
+    border: 1px solid #FFF4DC;
+    border-radius: 19px;  
+}
+.card-3-background{
+    background: linear-gradient(180deg, #EEE1FF 0%, #FFFFFF 40%);
+    border: 1px solid #EEE1FF;
+    border-radius: 19px;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 30px;
+}
+.card-button{
+    all: unset;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card-button:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.card-image{
+    width: 140px;
+    height: 140px;
+    
+}
+.arrow-icons{
+    text-align: center;
+}
+.fa-solid{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #FEA301;
+    border-radius: 30px;
+    color: white;
+    background-color: #FEA301;
+    cursor: pointer;
+}
+.fa-solid:hover{
+    border: 2px solid #FEA301;
+    color: #FEA301;
+    background-color: white;
+    transition: 0.3s;
+}
 
 /* Mobile Responsive styles */
 @media screen and (max-width: 576px) {
@@ -159,7 +237,7 @@
     }
 
     .banner-image {
-        padding: 0px 20px;
+        padding: 20px;
     }
 
     .banner-image-content {
@@ -199,9 +277,35 @@
     .nav-icon>.fa-bars {
         font-size: 2.5rem;
     }
+    .nav{
+        border: 1px solid #FEA301;
+    }
+    .header-section-content{
+        padding: 0px;
+    }
+    /* Curriculum Responsive styles */
+    .section-title{
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    .cards{
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+        margin-bottom: 0px;
+    }
+    .card{
+        padding: 36px 28px;
+    }
+    .arrow-icons{
+        display: none;
+    }
+/* Stories Responsive styles */
 
-    /* Responsive styles */
 
+
+/* Footer Responsive styles */
 
 
 
