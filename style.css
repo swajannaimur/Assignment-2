@@ -8,7 +8,32 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+/* Admission going on */
+.marquee {
+    width: 100%; 
+    overflow: hidden; 
+    background-color: #FEA301; 
+    padding: 10px; 
+    font-size: 1.2rem; 
+    color: white;
+    font-weight: bold; 
+    margin-top: 10px;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    animation: scroll-left 8s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
 /* shared styles */
 .width{
     max-width: 1160px;
@@ -320,6 +345,7 @@
 .footer-description{
     margin-top: 30px;
     font-size: 1.25rem;
+    line-height: 1.8rem;
     color: white;
 }
 .footer-second-part-title{
@@ -364,7 +390,10 @@
         display: block;
         padding: 12px 16px;
     }
-
+    .marquee{
+        font-size: 0.6rem;
+        width: unset;
+    }
     .banner-image {
         padding: 20px;
     }
@@ -449,8 +478,7 @@
     .stories-title-2{
         font-size: 0.6rem;
         line-height: 1rem;
-        padding-top: 10px;
-        padding-bottom: 20px;
+        padding: 10px 10px 20px 0px;
     }
     .stories-button-2{
         font-size: 0.6rem;
@@ -469,6 +497,7 @@
     }
     .footer-description{
         font-size: 1rem;
+        line-height: 1.6rem;
         padding-right: 50px;
     }
     .footer-logo-section, .footer-description, .footer-section-content{
